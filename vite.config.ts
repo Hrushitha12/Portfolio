@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '', // <-- IMPORTANT for GitHub Pages
+  base: 'https://github.com/Hrushitha12/Portfolio', // <-- IMPORTANT for GitHub Pages
 })
