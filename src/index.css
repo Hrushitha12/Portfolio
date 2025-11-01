@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  @apply bg-navy-900 text-white font-inter antialiased;
+  overflow-x: hidden;
+}
+
+.glass {
+  @apply bg-opacity-10 bg-white backdrop-blur-md border border-white/10 shadow-glass;
+}
+
+.glass-card {
+  @apply glass rounded-xl transition-all duration-300 hover:bg-opacity-15;
+}
+
+.glass-button {
+  @apply glass rounded-lg px-6 py-3 transition-all duration-300 hover:bg-opacity-20 hover:scale-105;
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-secondary-500;
+}
+
+.animate-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-reveal.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline */
+.timeline-container {
+  @apply relative;
+}
+
+.timeline-line {
+  @apply absolute top-0 bottom-0 left-[15px] sm:left-1/2 w-[2px] bg-gradient-to-b from-primary-500 to-secondary-500;
+}
+
+.timeline-item {
+  @apply relative flex flex-col sm:flex-row sm:justify-between sm:gap-8 mb-12;
+}
+
+.timeline-item-content {
+  @apply pl-12 sm:pl-0 max-w-full sm:max-w-[calc(50%-2rem)];
+}
+
+.timeline-item-dot {
+  @apply absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 top-0 w-8 h-8 rounded-full border-4 border-primary-500 bg-navy-900;
+}
+
+.timeline-item:nth-child(even) {
+  @apply sm:flex-row-reverse;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-navy-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-600;
+}
