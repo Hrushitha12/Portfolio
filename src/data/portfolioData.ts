@@ -127,32 +127,42 @@ export const publications: Publication[] = [
 export const skills: Skill[] = [
   // Languages
   { id: 1, name: 'Python', icon: 'code', category: 'languages' },
-  { id: 2, name: 'R', icon: 'code', category: 'languages' },
-  { id: 3, name: 'Java', icon: 'code', category: 'languages' },
-  { id: 4, name: 'C', icon: 'code', category: 'languages' },
+  { id: 2, name: 'JavaScript', icon: 'code', category: 'languages' },
+  { id: 3, name: 'TypeScript', icon: 'code', category: 'languages' },
+  { id: 4, name: 'Java', icon: 'code', category: 'languages' },
   { id: 5, name: 'SQL', icon: 'database', category: 'languages' },
-  
+  { id: 6, name: 'R', icon: 'code', category: 'languages' },
+  { id: 7, name: 'C', icon: 'code', category: 'languages' },
+
   // Frameworks & Libraries
-  { id: 6, name: 'TensorFlow', icon: 'brain', category: 'frameworks' },
-  { id: 7, name: 'PyTorch', icon: 'flame', category: 'frameworks' },
-  { id: 8, name: 'Scikit-Learn', icon: 'bar-chart', category: 'frameworks' },
-  { id: 9, name: 'NumPy', icon: 'calculator', category: 'frameworks' },
-  { id: 10, name: 'Pandas', icon: 'table', category: 'frameworks' },
-  { id: 11, name: 'OpenCV', icon: 'camera', category: 'frameworks' },
-  { id: 12, name: 'NLTK', icon: 'message-square', category: 'frameworks' },
-  
+  { id: 8, name: 'React', icon: 'layout', category: 'frameworks' },
+  { id: 9, name: 'Flask', icon: 'server', category: 'frameworks' },
+  { id: 10, name: 'Django', icon: 'server', category: 'frameworks' },
+  { id: 11, name: 'TensorFlow', icon: 'brain', category: 'frameworks' },
+  { id: 12, name: 'PyTorch', icon: 'flame', category: 'frameworks' },
+  { id: 13, name: 'Scikit-Learn', icon: 'bar-chart', category: 'frameworks' },
+  { id: 14, name: 'NumPy', icon: 'calculator', category: 'frameworks' },
+  { id: 15, name: 'Pandas', icon: 'table', category: 'frameworks' },
+  { id: 16, name: 'OpenCV', icon: 'camera', category: 'frameworks' },
+  { id: 17, name: 'NLTK', icon: 'message-square', category: 'frameworks' },
+
   // Tools
-  { id: 13, name: 'Tableau', icon: 'pie-chart', category: 'tools' },
-  { id: 14, name: 'Jupyter', icon: 'notebook', category: 'tools' },
-  { id: 15, name: 'Git', icon: 'git-branch', category: 'tools' },
-  { id: 16, name: 'Docker', icon: 'box', category: 'tools' },
-  
+  { id: 18, name: 'HTML', icon: 'file-text', category: 'tools' },
+  { id: 19, name: 'CSS', icon: 'palette', category: 'tools' },
+  { id: 20, name: 'Tailwind CSS', icon: 'palette', category: 'tools' },
+  { id: 21, name: 'Git', icon: 'git-branch', category: 'tools' },
+  { id: 22, name: 'Docker', icon: 'box', category: 'tools' },
+  { id: 23, name: 'Tableau', icon: 'pie-chart', category: 'tools' },
+  { id: 24, name: 'Jupyter', icon: 'notebook', category: 'tools' },
+
   // Other
-  { id: 17, name: 'GPT-4All', icon: 'sparkles', category: 'other' },
-  { id: 18, name: 'LLMs', icon: 'brain-circuit', category: 'other' },
-  { id: 19, name: 'Sentence Encoders', icon: 'file-text', category: 'other' },
-  { id: 20, name: 'Data Visualization', icon: 'bar-chart-2', category: 'other' },
+  { id: 25, name: 'REST APIs', icon: 'link', category: 'other' },
+  { id: 26, name: 'Automation Workflows', icon: 'zap', category: 'other' },
+  { id: 27, name: 'Google Apps Script', icon: 'sparkles', category: 'other' },
+  { id: 28, name: 'LLMs', icon: 'brain-circuit', category: 'other' },
+  { id: 29, name: 'Data Visualization', icon: 'bar-chart-2', category: 'other' },
 ];
+
 
 export const leadershipActivities = [
   {

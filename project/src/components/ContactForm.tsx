@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2Pw-ZTKi6YoaESeaXuRsczN_8z43oRcI0Hr_04BBI3l1h6ZUObS8s3xwpMkSGU3IJPQ/exec";
+const SCRIPT_URL= "https://script.google.com/macros/s/AKfycbx2Pw-ZTKi6YoaESeaXuRsczN_8z43oRcI0Hr_04BBI3l1h6ZUObS8s3xwpMkSGU3IJPQ/exec"
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,32 +17,22 @@ const ContactForm: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setFormState('submitting');
-
-  try {
-    const res = await fetch(SCRIPT_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(formData),
-    });
-
-    const json = await res.json();
-
-    if (json?.ok) {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormState('submitting');
+    
+    // Simulate form submission
+    setTimeout(() => {
+      console.log('Form submitted:', formData);
       setFormState('success');
       setFormData({ name: '', email: '', message: '' });
-
-      setTimeout(() => setFormState('idle'), 3000);
-    } else {
-      setFormState('error');
-    }
-  } catch (error) {
-    setFormState('error');
-  }
-};
-
+      
+      // Reset form state after 3 seconds
+      setTimeout(() => {
+        setFormState('idle');
+      }, 3000);
+    }, 1000);
+  };
   
   return (
     <form onSubmit={handleSubmit} className="glass-card p-6 animate-reveal">
