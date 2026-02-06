@@ -41,10 +41,6 @@ Deployment is handled by a GitHub Actions workflow defined in:
 .github/workflows/deploy.yml
 ```
 
-## 💡 AI Acknowledgment
-
-All core sections (project structure, Vite configuration, Tailwind setup, and GitHub Pages workflow) were generated and refined using **AI assistance**.  
-This approach drastically reduced the time required to scaffold, debug, and deploy the entire website — turning what would normally take hours into minutes.
 
 ### 📄 License
 
